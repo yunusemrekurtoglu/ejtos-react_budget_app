@@ -49,7 +49,8 @@ const AllocationForm = (props) => {
                   <select className="custom-select" id="inputGroupSelect02" onChange={(event) => setAction(event.target.value)}>
                         <option defaultValue value="Add" name="Add">Add</option>
                 <option value="Reduce" name="Reduce">Reduce</option>
-                  </select>
+                  </select>    
+                  
                     <input
                         required='required'
                         type='number'
@@ -57,7 +58,8 @@ const AllocationForm = (props) => {
                         value={cost}
                         style={{ marginLeft: '2rem' , size: 10}}
                         onChange={(event) => setCost(event.target.value)}>
-                        </input>
+                        
+                        </input><p>Dollar</p>
                     <button className="btn btn-primary" onClick={submitEvent} style={{ marginLeft: '2rem' }}>
                         Save
                     </button>
